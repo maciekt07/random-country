@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+  margin: 0;
+  font-family: poppins;
+  background: rgb(35, 31, 103);
+  color: white;
+}
+
+nav {
+  background-color: rgb(19, 21, 40);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#flag {
+  border: 5px solid white;
+  border-radius: 18px;
+  margin-top: 80px;
+}
+
+#name {
+  text-align: center;
+}
+
+#search {
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 25px;
+  width: 400px;
+}
+
+#submit {
+  background-color: blueviolet;
+  padding: 20px;
+  border-radius: 25px;
+  position: absolute;
+  margin-left: 380px;
+}
+
+#search,
+#submit {
+  outline: none;
+  border: none;
+}
+
+.table {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#random {
+  font-family: poppins;
+  font-size: 28px;
+  outline: none;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 100px;
+  color: white;
+  background: blueviolet;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+#random:hover {
+  box-shadow: 0px 0px 24px rgba(138, 43, 226, 0.7);
+}
+
+.googleMapsBtn {
+  margin-top: 25px;
+  font-family: poppins;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 100px;
+  color: white;
+  background: #35a651;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.googleMapsBtn:hover {
+  box-shadow: 0px 0px 24px rgba(53, 166, 81, 0.6823529412);
+}
+
+table {
+  background: rgba(255, 255, 255, 0.173);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 15px;
+  border-radius: 15px;
+  width: 600px;
+}
+
+td {
+  padding: 2px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://flagcdn.com/w320/pl.png" />
+    <link rel="stylesheet" href="dist/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Random Country</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Random Country</h1>
+
+      <div class="center">
+        <input id="search" type="text" placeholder="Search Country..." />
+        <button id="submit">
+          <i style="color: white" class="fa fa-search fa-2x"></i>
+        </button>
+      </div>
+      <h1 style="visibility: hidden">>Random Country</h1>
+    </nav>
+    <div class="container">
+      <div class="center">
+        <img width="300px" id="flag" />
+      </div>
+      <p id="name"></p>
+      <br />
+      <div class="table">
+        <table>
+          <tbody id="table"></tbody>
+        </table>
+      </div>
+      <br />
+      <div class="button-container">
+        <button id="random">
+          <i class="fa-solid fa-earth-americas"></i>&nbsp;Random
+        </button>
+      </div>
+      <div class="button-container">
+        <a id="googleMaps" href="" target="_blank"
+          ><button class="googleMapsBtn">
+            <i class="fa-solid fa-map"></i>&nbsp;View on Google Maps
+          </button></a
+        >
+      </div>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
