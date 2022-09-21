@@ -83,7 +83,6 @@ random.addEventListener("click", () => {
 submit.addEventListener("click", () => {
   if (search.value != "") {
     loading();
-
     main();
   }
 });

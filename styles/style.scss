@@ -32,17 +32,26 @@ nav {
 }
 
 #search {
-  padding: 10px;
+  padding: 16px;
   font-size: 18px;
-  border-radius: 16px;
+  border-radius: 100px;
   width: 400px;
+  transition: 0.3s all;
+  &:focus {
+    box-shadow: 0px 0px 18px 1px #8e37ffcd;
+  }
 }
 #submit {
-  background-color: blueviolet;
-  padding: 12px;
-  border-radius: 16px;
+  cursor: pointer;
+  background: transparent;
+  padding: 13px;
+  border-radius: 100px;
   position: absolute;
-  margin-left: 370px;
+  margin-left: 373px;
+  transition: 0.3s all;
+  &:hover {
+    text-shadow: 0px 0px 19px #8e37ffa5;
+  }
 }
 
 #search,
