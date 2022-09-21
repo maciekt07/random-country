@@ -70,9 +70,20 @@ const main = () => {
     });
 };
 main();
-random.addEventListener("click", main);
+
+const loading = () => {
+  nameTxt.innerHTML = `<span style="font-size:32px;font-weight:bold">Loading...</span>`;
+  flagImg.src = "loading.gif";
+};
+
+random.addEventListener("click", () => {
+  loading();
+  main();
+});
 submit.addEventListener("click", () => {
   if (search.value != "") {
+    loading();
+
     main();
   }
 });
