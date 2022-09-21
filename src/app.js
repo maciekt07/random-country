@@ -41,28 +41,31 @@ const main = () => {
           linkIcon.setAttribute("href", flagPNG);
           nameTxt.innerHTML = `<span style="font-size:32px;font-weight:bold">${commonName}</span><br /><span style="font-size:16px">(${Name})</span>`;
           document.title = `${commonName} - Random Country`;
-          table.innerHTML = `<tr><td>Capital: </td><td>${
+          table.innerHTML = `<tr><td><b>Capital:</b> </td><td>${
             data[0].capital
           }</td></tr>
-          <tr><td>Population: </td><td>${numberWithSpaces(
+          <tr><td><b>Population:</b> </td><td>${numberWithSpaces(
             data[0].population
           )}</td></tr>
-          <tr><td>Region: </td><td>${data[0].region}</td></tr>
-          <tr><td>Subregion: </td><td>${data[0].subregion}</td></tr>
-          <tr><td>Area: </td><td>${numberWithSpaces(data[0].area)} km²</td></tr>
-          <tr><td>Languages: </td><td>${JSON.stringify(
+          <tr><td><b>Region:</b> </td><td>${data[0].region}</td></tr>
+          <tr><td><b>Subregion:</b> </td><td>${data[0].subregion}</td></tr>
+          <tr><td><b>Area:</b> </td><td>${numberWithSpaces(
+            data[0].area
+          )} km²</td></tr>
+          <tr><td><b>Languages:</b> </td><td>${JSON.stringify(
             data[0].languages
           )}</td></tr>
-          <tr><td>Currencies: </td><td>${JSON.stringify(
+          <tr><td><b>Currencies:</b> </td><td>${JSON.stringify(
             data[0].currencies
           )}</td></tr>
-          <tr><td>Timezone: </td><td>${data[0].timezones}</td></tr>
+          <tr><td><b>Timezone:</b> </td><td>${data[0].timezones}</td></tr>
           
           `;
           search.value = "";
         })
         .catch((err) => {
-          alert(err);
+          console.error(err);
+          alert("Country not found");
         });
     });
 };

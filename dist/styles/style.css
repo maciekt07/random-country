@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  font-family: poppins;
+}
+
 body {
   margin: 0;
-  font-family: poppins;
   background: rgb(35, 31, 103);
   color: white;
 }
 
 nav {
   background-color: rgb(19, 21, 40);
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 16px;
 }
 
 .center {
@@ -23,7 +23,8 @@ nav {
 #flag {
   border: 5px solid white;
   border-radius: 18px;
-  margin-top: 80px;
+  margin-top: 25px;
+  height: 200px;
 }
 
 #name {
@@ -31,18 +32,18 @@ nav {
 }
 
 #search {
-  padding: 20px;
-  font-size: 20px;
-  border-radius: 25px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 16px;
   width: 400px;
 }
 
 #submit {
   background-color: blueviolet;
-  padding: 20px;
-  border-radius: 25px;
+  padding: 12px;
+  border-radius: 16px;
   position: absolute;
-  margin-left: 380px;
+  margin-left: 370px;
 }
 
 #search,
@@ -52,7 +53,7 @@ nav {
 }
 
 .table {
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +66,6 @@ nav {
 }
 
 #random {
-  font-family: poppins;
   font-size: 28px;
   outline: none;
   border: none;
@@ -82,7 +82,6 @@ nav {
 
 .googleMapsBtn {
   margin-top: 25px;
-  font-family: poppins;
   font-size: 16px;
   outline: none;
   border: none;
@@ -107,5 +106,5 @@ table {
 }
 
 td {
-  padding: 2px;
+  padding: 7px;
 }/*# sourceMappingURL=style.css.map */
